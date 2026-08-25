@@ -1,0 +1,95 @@
+2026-03-05 14:15:14 INFO     Loaded configuration: {'modelType': 'Spiking', 'trainData': {'120k': 'birdy654/cifake-real-and-ai-generated-synthetic-images', '162k': 'wish096/realvsfake-81k-by-wish'}, 'testData': {'1k': 'hamzaboulahia/hardfakevsrealfaces', '2k': 'ciplab/real-and-fake-face-detection'}, 'numWorkers': 4, 'batchSize': 256, 'learningRate': 0.0002, 'imageHeight': 224, 'imageWidth': 224, 'numEpochs': 20, 'patience': 20, 'nGPUs': 1, 'nQueues': 4, 'nLayers': 2, 'manualSeed': 999, 'numChannels': 3, 'beta1': 0.5, 'nCPUs': 4, 'quantumDevice': 'default.qubit', 'nQubits': 4, 'diffType': 'best', 'typeLayers': 'strong', 'patch': False, 'optimisationLevel': 1, 'shots': 1024, 'warmupEpochs': 5, 'split': {'train': 0.8, 'val': 0.2, 'test': 0.0}}
+2026-03-05 14:15:14 INFO     Seed: 999
+2026-03-05 14:15:14 INFO     Device type: cuda
+2026-03-05 14:15:14 INFO     Available GPUs: 1
+2026-03-05 14:15:14 INFO       GPU 0: NVIDIA H100 80GB HBM3
+2026-03-05 14:15:20 INFO     Using single GPU
+2026-03-05 14:15:32 INFO     Dataset split: train=217577, val=54394, test=3330 images
+2026-03-05 14:15:32 INFO     --STARTING TRAINING--
+2026-03-05 14:15:32 INFO     Applying linear warmup. LR: 0.00004000
+2026-03-05 16:33:36 INFO     First eval batch wait: 7705.7ms
+2026-03-05 16:49:51 INFO     Epoch: 1  Train Loss: 0.5567  Train Acc: 83.50%  Train F1: 0.8037  Val Loss: 0.4421  Val Acc: 95.75%  Val F1: 0.9547  Mem: 11520MB  Batch Wait: 13.2ms  CPU: 3.81%  GPU: 17.12%  
+2026-03-05 16:49:52 INFO     Validation metrics improved. Model saved.
+2026-03-05 16:49:52 INFO     Applying linear warmup. LR: 0.00008000
+2026-03-05 19:13:14 INFO     First eval batch wait: 1066.6ms
+2026-03-05 19:27:57 INFO     Epoch: 2  Train Loss: 0.3932  Train Acc: 95.80%  Train F1: 0.9563  Val Loss: 0.3682  Val Acc: 95.97%  Val F1: 0.9579  Mem: 11520MB  Batch Wait: 3.0ms  CPU: 1.25%  GPU: 16.19%  
+2026-03-05 19:27:58 INFO     Validation metrics improved. Model saved.
+2026-03-05 19:27:58 INFO     Applying linear warmup. LR: 0.00012000
+2026-03-05 21:53:00 INFO     First eval batch wait: 1182.5ms
+2026-03-05 22:07:52 INFO     Epoch: 3  Train Loss: 0.3625  Train Acc: 95.76%  Train F1: 0.9559  Val Loss: 0.3555  Val Acc: 96.20%  Val F1: 0.9610  Mem: 11520MB  Batch Wait: 3.3ms  CPU: 0.94%  GPU: 15.55%  
+2026-03-05 22:07:52 INFO     Validation metrics improved. Model saved.
+2026-03-05 22:07:52 INFO     Applying linear warmup. LR: 0.00016000
+2026-03-06 00:39:55 INFO     First eval batch wait: 1097.2ms
+2026-03-06 00:57:44 INFO     Epoch: 4  Train Loss: 0.3547  Train Acc: 96.04%  Train F1: 0.9585  Val Loss: 0.4012  Val Acc: 91.31%  Val F1: 0.9035  Mem: 11520MB  Batch Wait: 3.4ms  CPU: 4.48%  GPU: 15.35%  
+2026-03-06 00:57:44 INFO     Validation metrics degraded for 1 epochs.
+2026-03-06 00:57:44 INFO     Applying linear warmup. LR: 0.00020000
+2026-03-06 03:22:59 INFO     First eval batch wait: 1331.2ms
+2026-03-06 03:38:03 INFO     Epoch: 5  Train Loss: 0.4587  Train Acc: 85.49%  Train F1: 0.8406  Val Loss: 0.7501  Val Acc: 56.02%  Val F1: 0.5655  Mem: 11520MB  Batch Wait: 4.0ms  CPU: 1.51%  GPU: 17.67%  
+2026-03-06 03:38:03 INFO     Validation metrics degraded for 2 epochs.
+2026-03-06 03:38:03 INFO     Applying cosine decay. LR: 0.00020000
+2026-03-06 06:10:29 INFO     First eval batch wait: 1186.8ms
+2026-03-06 06:26:12 INFO     Epoch: 6  Train Loss: 0.4416  Train Acc: 86.96%  Train F1: 0.8587  Val Loss: 0.3675  Val Acc: 94.61%  Val F1: 0.9433  Mem: 11520MB  Batch Wait: 3.8ms  CPU: 2.55%  GPU: 14.93%  
+2026-03-06 06:26:12 INFO     Validation metrics degraded for 3 epochs.
+2026-03-06 06:26:12 INFO     Applying cosine decay. LR: 0.00019781
+2026-03-06 08:56:01 INFO     First eval batch wait: 1291.2ms
+2026-03-06 09:11:20 INFO     Epoch: 7  Train Loss: 0.3744  Train Acc: 93.90%  Train F1: 0.9353  Val Loss: 0.3595  Val Acc: 95.42%  Val F1: 0.9514  Mem: 11520MB  Batch Wait: 4.1ms  CPU: 1.89%  GPU: 15.51%  
+2026-03-06 09:11:20 INFO     Validation metrics degraded for 4 epochs.
+2026-03-06 09:11:20 INFO     Applying cosine decay. LR: 0.00019135
+2026-03-06 11:35:21 INFO     First eval batch wait: 1059.0ms
+2026-03-06 11:50:30 INFO     Epoch: 8  Train Loss: 0.3681  Train Acc: 94.51%  Train F1: 0.9416  Val Loss: 0.3437  Val Acc: 96.98%  Val F1: 0.9683  Mem: 11520MB  Batch Wait: 3.8ms  CPU: 1.18%  GPU: 17.00%  
+2026-03-06 11:50:30 INFO     Validation metrics improved. Model saved.
+2026-03-06 11:50:30 INFO     Applying cosine decay. LR: 0.00018090
+2026-03-06 14:14:21 INFO     First eval batch wait: 1397.9ms
+2026-03-06 14:29:23 INFO     Epoch: 9  Train Loss: 0.3631  Train Acc: 95.02%  Train F1: 0.9470  Val Loss: 0.3822  Val Acc: 93.12%  Val F1: 0.9248  Mem: 11520MB  Batch Wait: 4.9ms  CPU: 1.22%  GPU: 16.26%  
+2026-03-06 14:29:23 INFO     Validation metrics degraded for 1 epochs.
+2026-03-06 14:29:23 INFO     Applying cosine decay. LR: 0.00016691
+2026-03-06 17:05:44 INFO     First eval batch wait: 1019.2ms
+2026-03-06 17:25:30 INFO     Epoch: 10  Train Loss: 0.3770  Train Acc: 93.63%  Train F1: 0.9318  Val Loss: 0.4395  Val Acc: 87.41%  Val F1: 0.8589  Mem: 11520MB  Batch Wait: 157.2ms  CPU: 1.44%  GPU: 15.06%  
+2026-03-06 17:25:30 INFO     Validation metrics degraded for 2 epochs.
+2026-03-06 17:25:30 INFO     Applying cosine decay. LR: 0.00015000
+2026-03-06 20:06:19 INFO     First eval batch wait: 8527.1ms
+2026-03-06 20:27:48 INFO     Epoch: 11  Train Loss: 0.3620  Train Acc: 95.12%  Train F1: 0.9486  Val Loss: 0.3587  Val Acc: 95.41%  Val F1: 0.9528  Mem: 11520MB  Batch Wait: 372.0ms  CPU: 1.74%  GPU: 15.88%  
+2026-03-06 20:27:49 INFO     Validation metrics degraded for 3 epochs.
+2026-03-06 20:27:49 INFO     Applying cosine decay. LR: 0.00013090
+2026-03-06 22:42:13 INFO     First eval batch wait: 1299.1ms
+2026-03-06 22:56:29 INFO     Epoch: 12  Train Loss: 0.3636  Train Acc: 94.96%  Train F1: 0.9467  Val Loss: 0.4051  Val Acc: 90.84%  Val F1: 0.8964  Mem: 11520MB  Batch Wait: 7.4ms  CPU: 0.14%  GPU: 17.00%  
+2026-03-06 22:56:29 INFO     Validation metrics degraded for 4 epochs.
+2026-03-06 22:56:29 INFO     Applying cosine decay. LR: 0.00011045
+2026-03-07 01:13:12 INFO     First eval batch wait: 1204.2ms
+2026-03-07 01:28:22 INFO     Epoch: 13  Train Loss: 0.3649  Train Acc: 94.83%  Train F1: 0.9445  Val Loss: 0.3635  Val Acc: 94.97%  Val F1: 0.9473  Mem: 11520MB  Batch Wait: 4.5ms  CPU: 0.64%  GPU: 17.22%  
+2026-03-07 01:28:22 INFO     Validation metrics degraded for 5 epochs.
+2026-03-07 01:28:22 INFO     Applying cosine decay. LR: 0.00008955
+2026-03-07 03:50:48 INFO     First eval batch wait: 1034.3ms
+2026-03-07 04:06:16 INFO     Epoch: 14  Train Loss: 0.3699  Train Acc: 94.34%  Train F1: 0.9402  Val Loss: 0.4471  Val Acc: 86.59%  Val F1: 0.8685  Mem: 11520MB  Batch Wait: 5.1ms  CPU: 1.49%  GPU: 16.33%  
+2026-03-07 04:06:16 INFO     Validation metrics degraded for 6 epochs.
+2026-03-07 04:06:16 INFO     Applying cosine decay. LR: 0.00006910
+2026-03-07 06:33:37 INFO     First eval batch wait: 1114.6ms
+2026-03-07 06:48:14 INFO     Epoch: 15  Train Loss: 0.3898  Train Acc: 92.34%  Train F1: 0.9168  Val Loss: 0.3606  Val Acc: 95.27%  Val F1: 0.9493  Mem: 11520MB  Batch Wait: 3.7ms  CPU: 1.67%  GPU: 15.63%  
+2026-03-07 06:48:14 INFO     Validation metrics degraded for 7 epochs.
+2026-03-07 06:48:14 INFO     Applying cosine decay. LR: 0.00005000
+2026-03-07 09:02:11 INFO     First eval batch wait: 1344.5ms
+2026-03-07 09:16:24 INFO     Epoch: 16  Train Loss: 0.3592  Train Acc: 95.41%  Train F1: 0.9509  Val Loss: 0.3479  Val Acc: 96.54%  Val F1: 0.9636  Mem: 11520MB  Batch Wait: 3.9ms  CPU: 0.17%  GPU: 16.89%  
+2026-03-07 09:16:24 INFO     Validation metrics degraded for 8 epochs.
+2026-03-07 09:16:24 INFO     Applying cosine decay. LR: 0.00003309
+2026-03-07 11:30:52 INFO     First eval batch wait: 1215.9ms
+2026-03-07 11:45:05 INFO     Epoch: 17  Train Loss: 0.3536  Train Acc: 95.97%  Train F1: 0.9570  Val Loss: 0.3447  Val Acc: 96.86%  Val F1: 0.9669  Mem: 11520MB  Batch Wait: 3.6ms  CPU: 0.20%  GPU: 15.93%  
+2026-03-07 11:45:05 INFO     Validation metrics degraded for 9 epochs.
+2026-03-07 11:45:05 INFO     Applying cosine decay. LR: 0.00001910
+2026-03-07 14:10:42 INFO     First eval batch wait: 1258.8ms
+2026-03-07 14:25:39 INFO     Epoch: 18  Train Loss: 0.3478  Train Acc: 96.55%  Train F1: 0.9634  Val Loss: 0.3439  Val Acc: 96.94%  Val F1: 0.9680  Mem: 11520MB  Batch Wait: 3.8ms  CPU: 0.37%  GPU: 15.31%  
+2026-03-07 14:25:39 INFO     Validation metrics degraded for 10 epochs.
+2026-03-07 14:25:39 INFO     Applying cosine decay. LR: 0.00000865
+2026-03-07 16:55:33 INFO     First eval batch wait: 1198.5ms
+2026-03-07 17:10:05 INFO     Epoch: 19  Train Loss: 0.3448  Train Acc: 96.85%  Train F1: 0.9667  Val Loss: 0.3411  Val Acc: 97.21%  Val F1: 0.9708  Mem: 11520MB  Batch Wait: 3.3ms  CPU: 0.46%  GPU: 15.30%  
+2026-03-07 17:10:05 INFO     Validation metrics improved. Model saved.
+2026-03-07 17:10:05 INFO     Applying cosine decay. LR: 0.00000219
+2026-03-07 19:34:57 INFO     First eval batch wait: 1093.3ms
+2026-03-07 19:49:41 INFO     Epoch: 20  Train Loss: 0.3451  Train Acc: 96.81%  Train F1: 0.9662  Val Loss: 0.3425  Val Acc: 97.07%  Val F1: 0.9692  Mem: 11520MB  Batch Wait: 3.5ms  CPU: 0.62%  GPU: 16.02%  
+2026-03-07 19:49:41 INFO     Validation metrics degraded for 1 epochs.
+2026-03-07 19:49:41 INFO     TRAINING RESULTS  Avg Train Loss: 0.3825  Avg Train Acc: 93.69%  Avg Train F1: 0.9315  Avg Val Loss: 0.3932  Avg Val Acc: 92.53%  Avg Val F1: 0.9221  Avg Mem: 11520MB  Avg Batch Wait: 30.6ms  Avg CPU: 1.39%  Avg GPU: 16.11%  
+2026-03-07 19:49:41 INFO     Best accuracy: 97.21%
+2026-03-07 19:49:43 INFO     Training visualization saved to ./outputs/Spiking_bs256_ep20_120k_162k_train_infer_gpu1/Spiking_bs256_ep20_120k_162k_train_infer_gpu1_metrics.png
+2026-03-07 19:49:43 INFO     --STARTING INFERENCE--
+2026-03-07 19:50:20 INFO     First eval batch wait: 36698.2ms
+2026-03-07 19:51:32 INFO     INFERENCE RESULTS  Avg Eval Loss: 0.7051  Avg Eval Acc: 60.72%  Avg Eval F1: 0.6204  Avg Mem: 11520MB  Avg Batch Wait: 3911.4ms  Avg CPU: 0.22%  Avg GPU: 4.90%  
+2026-03-07 19:51:45 INFO     Predictions visualisation saved to ./outputs/Spiking_bs256_ep20_120k_162k_train_infer_gpu1/Spiking_bs256_ep20_120k_162k_train_infer_gpu1_predictions.png

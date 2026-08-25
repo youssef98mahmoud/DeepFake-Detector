@@ -1,0 +1,43 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: deepfake-spiking-
+  labels:
+    kueue.x-k8s.io/queue-name: eidf114ns-user-queue
+spec:
+  completions: 1
+  backoffLimit: 0
+  template:
+    metadata:
+      name: deepfake-spiking-
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: deepfake
+        image: pytorch/pytorch:2.7.0-cuda11.8-cudnn9-runtime
+        command: ["/bin/sh"]
+        args:
+          - -c
+          - >-
+            cd /safe_data/deepfake/ &&
+            python3 -m pip install -r requirements.txt --user &&
+            python3 deepfake_detection.py -c Deepfake.conf.yaml --dataPath /safe_data/data
+        volumeMounts:
+          - mountPath: /safe_data
+            name: volume
+          - mountPath: /dev/shm
+            name: dshm
+        resources:
+          limits:
+            cpu: 8
+            memory: '128Gi'
+            nvidia.com/gpu: 1
+      nodeSelector:
+        nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+      volumes:
+        - name: volume
+          persistentVolumeClaim:
+            claimName: deepfake-pvc
+        - name: dshm
+          emptyDir:
+            medium: Memory

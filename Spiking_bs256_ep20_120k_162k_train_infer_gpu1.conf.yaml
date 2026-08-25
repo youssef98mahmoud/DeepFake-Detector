@@ -1,0 +1,17 @@
+modelType: "Spiking"
+trainData:
+  120k: "birdy654/cifake-real-and-ai-generated-synthetic-images"
+  162k: "wish096/realvsfake-81k-by-wish"
+testData:
+  1k: "hamzaboulahia/hardfakevsrealfaces"
+  2k: "ciplab/real-and-fake-face-detection"
+numWorkers: 4
+batchSize: 256
+learningRate: 0.0002
+imageHeight: 224
+imageWidth: 224
+numEpochs: 20
+patience: 20
+nGPUs: 1
+nQueues: 4
+nLayers: 2
