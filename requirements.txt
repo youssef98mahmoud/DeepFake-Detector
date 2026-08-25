@@ -1,0 +1,21 @@
+kagglehub
+matplotlib
+pandas
+pennylane
+psutil
+nvidia-ml-py
+requests>=2.32.4
+scikit-learn
+setuptools>=78.1.1
+torch
+torchsummary
+torchvision
+urllib3>=2.5.0
+ipykernel
+
+# Qiskit
+qiskit
+qiskit-aer
+qiskit-machine-learning
+qiskit_ibm_runtime
+python-dotenv

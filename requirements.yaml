@@ -1,0 +1,20 @@
+name: deepfake_env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13.5
+  - matplotlib=3.10.0
+  - pandas=3.0.0
+  - psutil=7.0.0
+  - scikit-learn=1.5.2
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - ipykernel
+  - pip
+  - pip:
+      - pennylane==0.44.0
+      - kagglehub==1.0.0
+      - nvidia-ml-py==13.590.48
+      - torchsummary==1.5.1
+

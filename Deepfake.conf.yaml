@@ -1,0 +1,18 @@
+modelType: "Classic"
+trainData:
+  #140k: "xhlulu/140k-real-and-fake-faces"
+  #deepfake2k: "ciplab/real-and-fake-face-detection"
+  cifake: "birdy654/cifake-real-and-ai-generated-synthetic-images"
+  hard1k: "hamzaboulahia/hardfakevsrealfaces"
+split:
+  train: 0.7
+  val: 0.2
+  test: 0.1
+numWorkers: 16
+batchSize: 512
+learningRate: 0.0002
+imageHeight: 224
+imageWidth: 224
+numEpochs: 50
+patience: 5
+nGPUs: 2
